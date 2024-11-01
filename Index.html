@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Estar do Jardim</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #a8e063, #56ab2f);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            perspective: 1000px;
+        }
+
+        .card-container {
+            transform-style: preserve-3d;
+            transform: rotateX(10deg) rotateY(20deg);
+            transition: transform 0.5s;
+        }
+
+        .card-container:hover {
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #228B22;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .details {
+            margin-top: 20px;
+            line-height: 1.6;
+            font-size: 1.2em;
+        }
+
+        .details p {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .shadow {
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="logo.png" alt="Logo Bem-Estar do Jardim" class="logo">
+            <h1>Bem-Estar do Jardim</h1>
+            <div class="details">
+                <p>Rua sem nome - casa do Itamar</p>
+                                <p>Bairro Sapucaia</p>
+                <p>Axixá - Maranhão</p>
+                <p>Telefone: (98) 98420-4442</p>
+                <p>WhatsApp: <a href="https://wa.me/5598984204442" target="_blank">Clique aqui para entrar em contato</a></p>
+                <p>Site: <a href="https://www.bemestardojardim.com.br" target="_blank">www.bemestardojardim.com.br</a></p>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </div>
+</body>
+</html>
